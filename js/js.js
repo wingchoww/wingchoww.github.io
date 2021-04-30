@@ -24,7 +24,7 @@
 								'<div class="check">' +
 								'<input type="checkbox" class="Each" />' +
 								'</div>' +
-								'<div class="pudc"><img src="images/1.jpg"  width="100"/><span>FIRED FISH BALLS</span></div>' +
+								'<div class="pudc"><img src="images/1.jpg"  width="100"/><span>FRIED FISH BALLS</span></div>' +
 								'<div class="pices">24.8</div>' +
 								'<div class="num"><span class="reduc">&nbsp;-&nbsp;</span><input type="text" value="1" /><span class="add">&nbsp;+</span></div>' +
 								'<div class="totle">24.8</div>' +
