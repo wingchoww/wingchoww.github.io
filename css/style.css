@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
+li, dl, dt, dd, form, a, fieldset, input, th, td
+{margin: 0; padding: 0; border: 1; outline: none;}
+body {	font-family: "Microsoft YaHei";font-size: 14px;color:#000000; line-height:20px;text-align:left;   }
+td,th {font-family: "SimSun";font-size: 14px;color: #000000;}
+
+A:link {TEXT-DECORATION: none;}
+A:visited {TEXT-DECORATION: none;}
+a:hover{color:#39484b;}
+ul,li{list-style-type:none; color:#FFFFFF;}
+p{color:#050505; line-height:30px;}
+a{color:#e0332a;}
+.clearit{clear:both;}
+
+.da{width:1000px; margin:0 auto; margin-top:20px;}
+.logo{float:left; margin-right:12px;}
+.logo img{ width:200px; height:80px; }
+.wenzi{float:left; width:80px; margin-left:32px; margin-top:25px; height:30px;background-color:#fef102;}
+.wenzi p{text-align:center; }
+.zuo{float:left; width:180px;}
+.you{float:left; width:800px; margin-left:20px;}
+.zuo1{width:180px; height:40px; background-color:#fef102;}
+.zuo2{width:180px; height:40px; background-color:#cdd7f0;}
+.zuo p{text-align:center; line-height:40px;}
+.zuo3{width:180px; height:300px; border-radius:10px;background-color:#fef102; margin-top:30px;}
+h4{text-align:center; line-height:40px;}
+.tu{float:left; width:150px; margin-right:10px;}
+.tu p{text-align:center; }
+.tu h6{text-align:center;color:#e0332a; }
+.tupian{margin-top:40px;}
+.banquan p{text-align:center; line-height:20px; color:#ff924f;}
+.zhong{width:1000px; height:30px; border-bottom : 1px solid #cdd7f0; margin:0 auto; margin-top:50px;}
+.zhong p{line-height:30px;text-align:center; color:#fef102; }
+.tu1{float:left; width:180px; margin-right:20px;}
+.tu1 p{text-align:center; }
+.tu1 h6{text-align:center;color:#e0332a; } 
+.tu2{ float:left; width:800px;}
+#playBox{ width:1000px; height:460px; margin:0 auto; background:#333; position:relative; overflow:hidden;} 
+.btn a{ display:inline-block; padding:5px 20px; background:#fd803d; color:#fff;}
+.btn{ margin-top:20px;}
+
+#divSmallBox{overflow:hidden;*display:inline;*zoom:1;width:10px;height:10px;margin:0 5px;border-radius:10px;background:#ffffff;}
+#playBox{ width:1000px; height:460px; margin:0 auto; background:#333; position:relative; overflow:hidden;}
+#playBox .oUlplay { width:99999px; position:absolute; left:0; top:0;}
+#playBox .oUlplay li{ float:left;}
+#playBox .pre{ cursor:pointer; width:45px; height:45px; background:url(images/l.png) no-repeat; position:absolute; top:190px; left:254px; z-index:10;}
+#playBox .next{ cursor:pointer; width:45px; height:45px; background:url(images/r.png) no-repeat; position:absolute; top:190px; right:10px; z-index:10;}
+#playBox .smalltitle {  height:10px; position:absolute; bottom:25px; right:50px;z-index:10}
+#playBox .smalltitle ul{ width:120px; margin:0 auto;}
+#playBox .smalltitle ul li{ width:10px; height:10px;border-radius:5px; border:2px solid #eee; margin:0 5px; border-radius:10px; background:#333; float:left; overflow:hidden;*display:inline;*zoom:1;}
+#playBox .smalltitle .thistitle{ background:#ff6600;}
+form p span{ display:block;}
+form p span.wrong{ color:Red;}
+form p label{ display:block;}
+form p { text-align:center;}
+form p input[type=submit],form p input[type=reset]{ padding:2px 20px; background-color:Orange; border:0; }
+ .xinghao
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.xinghao li
+{ 
+    width: 70px;
+    height: 30px;
+    background-color: #334A97;
+    color: white;
+    margin-right: 6px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    cursor: default;
+    float: left;
+}
+.xinghao li.cur
+{ 
+    background-color: #ff404b;
+} 
+.box{ overflow:hidden; }
+.box>div{ float:left; color:red; }
+.comment{ margin-top:20px;}
+.comment dl { 
+    padding-left: 25px;
+    margin-bottom:20px;
+}
+.comment dl dt { 
+    align-items: center;
+    height: 30px;
+}
+.comment dl dt img {
+    width: 34px;
+    border-radius: 4px;
+}
+.comment dl dt a {
+    color: #3377AA;
+    padding-left: 10px;
+}
+.comment dl dd {
+    line-height: 2;
+    color: #494949;
+    padding: 8px 0;
+}
+.tijiao textarea{ width:100%; height:120px; margin-bottom:20px;}
+.tijiao input{ float:right; padding:5px 20px; }
+.search{ text-align:right;}
+ .faq h3{ margin-bottom:10px;}
+ .faq p{ margin-bottom:20px; text-indent:2em;}

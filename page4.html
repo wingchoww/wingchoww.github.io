@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Air fryer food store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    <script>
+        function go() {
+            window.location.href = "page6.html";
+        } 
+    </script>
+</head>
+<body>
+    <img src="images/top.jpg" width="100%" />
+    <div class="search">
+        <div class="da">
+            <form>
+            <input />
+            <input type="button" value="Search" onclick="go()" />
+            </form>
+        </div>
+    </div>
+    <div class="da">
+        <div class="logo">
+            <img src="images/logo.png" width="200" ></div>
+        <div class="wenzi">
+            <p>
+                <a href="index.html">HOME</a></p>
+        </div>
+        <div class="wenzi">
+            <p>
+                <a href="page1.html">A&C PICK</a></p>
+        </div>
+        <div class="wenzi">
+            <p>
+                <a href="page2.html">HOT ITEM</a></p>
+        </div> 
+        <div class="wenzi">
+            <p>
+                <a href="page3.html">SIGN UP</a></p>
+        </div>
+        <div class="wenzi">
+            <p>
+                <a href="page4.html">SIGN IN</a></p>
+        </div>
+        <div class="wenzi">
+            <p>
+                <a href="page5.html">CART</a></p>
+        </div>
+        <div class="wenzi">
+            <p>
+                <a href="page7.html">FAQ</a></p>
+        </div>
+    </div>
+    <div class="clearit">
+    </div>
+    <div class="da">
+        <div class="banner">
+            <div class="slides"> 
+                <img class="mySlides" src="images/banner3.jpg" width="1000" height="313">
+            </div> 
+        </div>
+    </div>  
+     <div class="zhong">
+        <p>
+            SIGN IN</p>
+    </div>
+    <div class="da">
+        <div class="nav1">
+            <form>
+            <p>
+                <label for="userName">
+                    USER NAME：</label>
+                <input type="text" id="userName" size="13px">
+            </p>
+            <p>
+                <label for="passWord">
+                    PASSWORD：</label>
+                <input type="password" id="passWord">
+            </p>
+            <p>
+                <input id="Submit1" type="submit" value="SIGN IN">
+                <input id="Reset1" type="reset" value="RESET">
+            </p>
+            </form>
+        </div>
+        <script>
+            window.onload = function (e) {
+                var form = document.querySelector('form');
+                var userName = document.querySelector('#userName');
+                var passWord = document.querySelector('#passWord');
+                var span = document.querySelectorAll('span');
+
+                //onsubmit Event
+                form.onsubmit = function (e) {
+                    var username = checkUserName();
+                    if (!username) {
+                        return false;
+                    }
+                    var password = checkPassWord();
+                    if (!password) {
+                        return false;
+                    } else {
+                        var username1 = userName.value; ;
+                        var path = "index.html?" + username1;
+                        window.location.assign(encodeURI(path));
+                        return false;
+                    }
+                    return false;
+
+                };
+
+
+
+                //onblur An object loses focus
+                userName.onblur = function (e) {
+                    checkUserName();
+                };
+                passWord.onblur = function (e) {
+                    checkPassWord();
+                };
+
+
+                //USER NAME
+                function checkUserName(e) {
+                    if (userName.value.length == 0) {
+                        span[0].innerText = 'User name can not be empty';
+                        span[0].className = 'wrong';
+                        return false;
+                    }
+                    var pp = /^[a-zA-Z][a-zA-Z0-9_]{6,18}$/;
+                    if (!pp.test(userName.value)) {
+                        span[0].innerText = 'Username does not match the format, please re-enter';
+                        span[0].className = 'wrong';
+                        return false;
+                    }
+                    if (userName.value != "xiaoming") {
+                        span[0].innerText = 'Username is incorrect';
+                        span[0].className = 'wrong';
+                        return false;
+                    }
+                    span[0].innerText = 'The username is entered correctly';
+                    span[0].className = 'success';
+                    return true;
+                }
+
+
+
+                //PASSWORD
+                function checkPassWord(e) {
+                    if (passWord.value.length == 0) {
+                        span[1].innerText = 'Password can not be blank';
+                        span[1].className = 'wrong';
+                        return false;
+                    }
+                    var pattern = /^[A-Za-z0-9]{6,16}$/;
+                    if (!pattern.test(passWord.value)) {
+                        span[1].innerText = 'Password does not conform to the format, please re-enter';
+                        span[1].className = 'wrong';
+                        return false;
+                    }
+                    if (passWord.value != "123321") {
+                        span[1].innerText = 'Password is correct';
+                        span[1].className = 'wrong';
+                        return false;
+                    }
+                    span[1].innerText = 'Password input is correct';
+                    span[1].className = 'success';
+
+                    return true;
+                }
+            }
+        </script>
+    </div>
+      
+
+    <div class="banquan">
+        <p style="text-align:left;">© 2021 Air fryer food store. All rights reserved.</p> 
+	<p style="text-align:right;"><i class="fa fa-map-marker"></i>&nbsp;11 Hoi Ting Road, Yau Ma Tei, Kowloon</p>  
+	<p style="text-align:right;"><i class="fa fa-phone"> </i>&nbsp;55076600</p>
+    </div> 
+</body>
+</html>
